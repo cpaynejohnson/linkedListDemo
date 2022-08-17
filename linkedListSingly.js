@@ -131,16 +131,16 @@ class SinglyLinkedList {
         }
     }
 
-    //deleteNodeAtIdx
+    //deleteNodeAtIdx idx = 5
     deleteNodeAtIdx(idx){
         //check if there are nodes
         if(!this.head) {
             return false
         } else {
-            let counter = 0
+            let counter = 1
             let currentNode = this.head
-            while(counter !== idx) {
-                currentNode = currentNode.next
+            while(counter == idx) {
+                currentNode.next = 
                 counter++
             }
             
